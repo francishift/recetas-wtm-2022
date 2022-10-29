@@ -1,50 +1,67 @@
 {
-  "name": "vue-uikit",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "core-js": "^3.6.5",
-    "register-service-worker": "^1.7.1",
-    "vue": "^3.0.0",
-    "vue-router": "^4.0.0-0"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.13",
-    "@vue/cli-plugin-eslint": "~4.5.13",
-    "@vue/cli-plugin-pwa": "~4.5.13",
-    "@vue/cli-plugin-router": "~4.5.13",
-    "@vue/cli-service": "~4.5.13",
-    "@vue/compiler-sfc": "^3.0.0",
-    "@vue/eslint-config-airbnb": "^5.0.2",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-vue": "^7.0.0",
-    "less": "^3.0.4",
-    "less-loader": "^5.0.0"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
+    "name": "vue-uikit",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+        "lint-fix": "npm run lint -- --fix"
     },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "@vue/airbnb"
+    "dependencies": {
+        "axios": "^1.1.2",
+        "core-js": "^3.6.5",
+        "lodash": "^4.17.21",
+        "register-service-worker": "^1.7.1",
+        "uikit": "^3.15.10",
+        "vue": "^3.0.0",
+        "vue-axios": "^3.4.1",
+        "vue-router": "^4.0.0-0",
+        "wget": "^0.0.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.16",
+        "@babel/eslint-parser": "^7.12.16",
+        "@types/uikit": "^3.14.0",
+        "@vue/cli-plugin-babel": "~5.0.8",
+        "@vue/cli-plugin-eslint": "~5.0.8",
+        "@vue/cli-plugin-pwa": "~5.0.8",
+        "@vue/cli-plugin-router": "~5.0.8",
+        "@vue/cli-service": "~5.0.8",
+        "@vue/compiler-sfc": "^3.0.0",
+        "@vue/eslint-config-airbnb": "^6.0.0",
+        "eslint": "^7.32.0",
+        "eslint-plugin-import": "^2.25.3",
+        "eslint-plugin-vue": "^8.0.3",
+        "eslint-plugin-vuejs-accessibility": "^1.1.0",
+        "less": "^3.0.4",
+        "less-loader": "^5.0.0"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/recommended",
+            "@vue/airbnb"
+        ],
+        "parserOptions": {
+            "parser": "@babel/eslint-parser"
+        },
+        "rules": {
+            "no-unused-vars": "off",
+            "skipBlankLines": 0
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not dead"
     ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+    "rules": {
+        "no-unused-vars": "off",
+        "skipBlankLines": 0,
+        "no-trailing-whitespace": 1
+    }
 }
