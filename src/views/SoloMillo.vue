@@ -103,7 +103,7 @@
         target="_blank"
         href="https://www.andalucia.org/en/eno-gastronomy/scents-and-flavours-of-andalusia"
         class="uk-button uk-button-default"
-      >SCENTS AND FLAVOURS OF ANDALUSIAN </a>
+      >SCENTS AND FLAVOURS OF ANDALUSIA </a>
       <div class="uk-margin-large uk-position-relative uk-container">
         <router-link
           to="salmorejo"
