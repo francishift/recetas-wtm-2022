@@ -18,7 +18,7 @@
       >
         <div class="uk-width-5-6@s">
           <h1 class="uk-text-primary uk-margin-remove uk-display-inline uk-padding-left-right">
-            PORK FILLET WITH ARACENA CHEESE
+            PORK FILLET WITH ARACENA CHEESEE
           </h1>
         </div>
         <div class="uk-width-1-6@s">
