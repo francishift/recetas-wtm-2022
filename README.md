@@ -1,9 +1,6 @@
 # vue-uikit
 
-## Project setup
-```
-npm install
-```
+## Project setup with node_modules by error
 
 ### Compiles and hot-reloads for development
 ```
